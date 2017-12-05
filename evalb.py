@@ -1,4 +1,5 @@
 import os
+import stat
 import time
 import subprocess
 
@@ -9,6 +10,9 @@ EVALB_EXEC = './evalb'
 
 UPLOAD_FOLDER = '/tmp/'
 ALLOWED_EXTENSIONS = set(['gld', 'tst', 'txt'])
+
+st = os.stat(EVALB_EXEC)
+os.chmod(EVALB_EXEC, st.st_mode | stat.S_IEXEC)
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
