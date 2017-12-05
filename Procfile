@@ -1,2 +1,2 @@
-release: chmod +x ./evalb
+release: chmod a+x ./evalb
 web: gunicorn evalb:app
