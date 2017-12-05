@@ -1,2 +1,2 @@
-release: chmod a+x ./evalb
+release: /bin/bash -c "chmod +x ./evalb"
 web: gunicorn evalb:app
