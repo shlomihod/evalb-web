@@ -63,7 +63,10 @@ def index():
     <!doctype html>
     <title>Evalb</title>
     <h1>Evalb</h1>
-    <h5>Notes from the assignment notebook on EVALB: Some pre- or postprocessing may be necessary on the trees to compare them. Note in particular that some trees contain an additional ROOT or TOP node which should not be part of the evaluation.</h5>
+    <h5>Notes from the assignment notebook on EVALB: Some pre- or postprocessing may be necessary on the trees to compare them.
+    Note in particular that some trees contain an additional ROOT or TOP node which should not be part of the evaluation.
+    In general, the format of the gold and test files should match.</h5>
+    <h6>You can check some working samples files from the <a href="http://nlp.cs.nyu.edu/evalb/">Evalb</a> website. It is in the last version of the downloadable archive file.</h6>
     <form action="" method=post enctype=multipart/form-data>
       <p>Gold file: <input type=file name=gold-file></p>
       <p>Test file: <input type=file name=test-file></p>
