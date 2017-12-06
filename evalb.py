@@ -33,10 +33,10 @@ def index():
         if not (gold_file and test_file):
             return 'Failed to upload files. Try again!'
 
-        if not (allowed_file(gold_file.filename) and
-                allowed_file(test_file.filename)):
-            return 'Uploaded file should be with [{}] extensions'.format(
-                ', '.join(ALLOWED_EXTENSIONS))
+        # if not (allowed_file(gold_file.filename) and
+        #        allowed_file(test_file.filename)):
+        #    return 'Uploaded file should be with [{}] extensions'.format(
+        #        ', '.join(ALLOWED_EXTENSIONS))
 
         gold_filename = timestamp + '-gold-' + \
             secure_filename(gold_file.filename)
