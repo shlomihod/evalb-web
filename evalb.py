@@ -63,6 +63,7 @@ def index():
     <!doctype html>
     <title>Evalb</title>
     <h1>Evalb</h1>
+    <h5>Notes from the assignment notebook on EVALB: Some pre- or postprocessing may be necessary on the trees to compare them. Note in particular that some trees contain an additional ROOT or TOP node which should not be part of the evaluation.</h5>
     <form action="" method=post enctype=multipart/form-data>
       <p>Gold file: <input type=file name=gold-file></p>
       <p>Test file: <input type=file name=test-file></p>
